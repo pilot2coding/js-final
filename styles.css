@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('/airport.jpeg');
+    background-image: url('airport.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
