@@ -1,0 +1,164 @@
+#destinationInput{
+    width: 100%;
+}
+
+body {
+    background-image: url('/airport.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+#exploreTitle{
+    color: white;
+    font-size: 100px;
+    margin-top: auto;
+    margin-left: 1vh;
+}
+
+#contactTitle{
+    color: white;
+    font-size: 100px;
+    margin-top: 15vh;
+    margin-left: 70vh;
+
+}
+
+#teamMembers{
+    color: white;
+    font-size: 100px;
+    margin-left: 50vh;
+    margin-top: -20vh;
+}
+
+
+#contentDisplay{
+    color:white;
+    font-size: 50px;
+    margin-top: 10vh;
+    margin-left: 2vh;
+}
+
+#contentDisplayContact{
+    color:white;
+    font-size: 50px;
+    margin-top: 5vh;
+    margin-left: 2vh;
+}
+
+#socialMedia {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    margin-left: 70vh;
+}
+
+#contactForm input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+#contactForm textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+#contactForm button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    width: 10vh;
+    position: inherit;
+}
+
+.social-button {
+    display: flex; /* Usa Flexbox para el enlace */
+    
+    text-decoration: none;
+    margin-bottom: 10px; /* Espacio entre botones */
+}
+
+.social-button img {
+    display: block; /* Asegura que la imagen no tenga espacio extra alrededor */
+    width: 130px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+/* Ajustes específicos para Twitter y YouTube si son necesarios */
+.social-button-twitter img {
+    margin-left: -1vh;
+    margin-top: 15vh;
+}
+
+.social-button-youtube img {
+    margin-left: -1vh;
+    margin-top: 1vh;
+}
+
+#teamMembers img{
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
+#teamMembers{
+    color: white;
+}
+
+#result {
+    color: white;
+    font-size: 2vh;
+    margin-left: 12vh;
+}
+
+#searchDestinations {
+    position: absolute; /* Posiciona el div respecto al elemento padre */
+    top: 50%;          /* Posición desde la parte superior del elemento padre */
+    left: 80%;         /* Posición desde la izquierda del elemento padre */
+    transform: translate(-50%, -50%); /* Centra el div exactamente en la mitad */
+    width: 60%;        /* Ancho del div */
+    height: auto;      /* Altura automática basada en el contenido */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;     /* Espaciado interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    overflow-y: auto;  /* Permite desplazamiento vertical si el contenido es muy largo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#result {
+    color: white;
+    font-size: 2vh;
+    /* margin-left ya no es necesario debido al centrado con transform */
+    /* margin-left: 12vh; */
+    overflow-y: auto; /* Asegura que los resultados sean desplazables verticalmente */
+    max-height: 70vh; /* Altura máxima antes de que comience el desplazamiento */
+}
+
+/* Ajuste para los resultados individuales */
+#result div {
+    margin-bottom: 20px; /* Espacio entre resultados */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente visible */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados suaves */
+}
+
+#result h3 {
+    margin-top: 0; /* Remueve el margen superior del título */
+}
+
+#result img {
+    max-width: 100%; /* Asegura que la imagen no se desborde de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
